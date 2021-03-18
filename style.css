@@ -1,0 +1,68 @@
+h2{
+    color:blue;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+main{
+    display:flex;    
+}
+/* header */
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:end;
+}
+header h1{
+    font-size: 2.5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+header h2{
+    font-size: 2.5em;
+}
+header ul{
+    font-family: 'Akaya Telivigala', cursive;
+    margin-top: 10px;
+}
+header p{
+    margin: 0.5em 0;
+}
+/* block1 */
+#block1{
+    width: 75%;
+    margin: 20px;
+}
+#motivation{
+    color:grey;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+
+}
+/* block2 */
+#block2{
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+#block2 li{
+    margin-top: 10px;
+    list-style-type:none;
+}
+#block2 h2{
+    margin-left: 1em;
+}
+.rectangle, .rectangle2{
+    background-color: mediumblue;
+    height: 10px;
+    width: 200px;
+}
+.rectangle2{
+    background-color: grey;
+}
+.rectangle2 .rectangle{
+    /* background-color: grey; */
+    height: 10px;
+    width: 100px;
+    
+}
