@@ -52,17 +52,26 @@ header p{
 #block2 h2{
     margin-left: 1em;
 }
-.rectangle, .rectangle2{
+.rectangle{
     background-color: mediumblue;
     height: 10px;
     width: 200px;
 }
 .rectangle2{
     background-color: grey;
+    width: 200px;
+}
+.rectangle3{
+    background-color: grey;
+    width: 200px;
 }
 .rectangle2 .rectangle{
     /* background-color: grey; */
     height: 10px;
     width: 100px;
-    
+}
+.rectangle3 .rectangle{
+     /* background-color: grey; */
+     height: 10px;
+     width: 150px;
 }
