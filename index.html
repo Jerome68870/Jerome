@@ -178,6 +178,25 @@
             </section>
         </div>
     </main>
+    <footer>
+        <form action="/ma-page-de-traitement" method="POST">
+            <div>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea name="use_message" id="msg" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer le message</button> 
+            </div>
+        </form>
+    </footer>
 </body>
 
 </html>

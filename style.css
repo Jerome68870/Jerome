@@ -52,6 +52,10 @@ header p{
     text-align: center;
     font-family: 'Bangers', cursive;                        
 }
+#block1 h2{
+    text-decoration: underline;
+}
+
 /* block2 */
 #block2{
     width: 25%;
