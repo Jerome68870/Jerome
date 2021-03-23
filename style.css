@@ -1,3 +1,5 @@
+@import url("reset.mini.css");
+
 body{
     background: no-repeat center/100% url("/medias/fond.jpg");
 }
@@ -20,17 +22,19 @@ header img{
 header h1{
     font-size: 3em;
     font-family: 'Lora', serif;
-    margin-block-end: 0;
-    margin-block-start: 0;
+    margin-block-end: 20px;
+    margin-block-start: 20px;
+    text-shadow:4px 2px 2px white;
 }
 header h2{
-    font-size: 3em;
+    font-size: 4em;
     color: rgb(51, 66, 153);
     font-family: 'Lora', serif;
     margin-block-end: 0;
     margin-block-start: 0;
+    text-shadow: 2px 2px 2px white;
 }
-header ul{
+header div{
     font-family: 'Akaya Telivigala', cursive;
     margin-top: 10px;
     padding-left: 0;
@@ -38,22 +42,34 @@ header ul{
 }
 header p{
     margin-right: 20px;
+    padding: 7px;
 }
 /* block1 */
 #block1{
     width: 75%;
     margin: 20px;
 }
-#motivation{
+#block1 .motivation{
     color:rgb(41, 37, 37);
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: bolder;
     text-align: center;
-    font-family: 'Bangers', cursive;                        
+    font-family: 'Bangers', cursive; 
+    padding: 20px;
+    text-shadow: 1px 1px 2px white;                       
 }
 #block1 h2{
-    text-decoration: underline;
+    font-size: 25px;
+    padding: 40px 10px 20px 40px;
+}
+#block1 h3{
+    font-size: 19px;
+    padding: 0px 0px 0px 80px;
+}
+#block1 p{
+    font-size: 14px;
+    padding: 0px 40px 15px 80px;
 }
 
 /* block2 */
@@ -63,16 +79,20 @@ header p{
     flex-direction: column;
     padding-top: 100px;
 }
-#block2 ul{
-    width: 200px;
+#block2 h2{
+    font-size: 25px;
+    margin: 30px 0px 20px 0px;
 }
+#block2 ul{
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
 #block2 li{
     margin-top: 10px;
     list-style-type:none;
 }
-#block2 h2{
-    margin-left: 1em;
-}
+
 .rectangle{
     background-color: mediumblue;
     height: 10px;
@@ -97,10 +117,15 @@ header p{
      width: 150px;
 }
 
+/* formulaire */
+footer{
+    padding: 40px;
+}
+
 footer > form{
     /* centrer le formulaire */
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     /* voir limite formulaire */
     padding: 1em;
     border: 4px solid rgb(21, 31, 177);
@@ -115,7 +140,6 @@ div > label {
     /* alignement et taille étiquettes */
     display: inline-block;
     width: 90px;
-    text-align: right;
 }
 
 div > input,textarea{
@@ -147,4 +171,7 @@ textarea{
 
 button{
     margin-left: .5em;
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-size: 11px;
 }
