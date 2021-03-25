@@ -1,8 +1,12 @@
 @import url("reset.mini.css");
 
 body{
-    background: no-repeat center/100% url("/medias/fond.jpg");
+    background-image: url("/medias/fond.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
+
 h2{
     color:rgb(5, 5, 77);
     font-family: 'Open Sans Condensed', sans-serif;
@@ -12,52 +16,75 @@ main{
 }
 /* header */
 header{
-    display:flex;
-    justify-content:space-around;
-    align-items:end;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto 3em;
 }
-header img{
+#logo{
+    width: 30vw;
+    height: 30vw;
+    grid-column-start: 1;
+}
+#logo_img{
     border-radius: 50%;
+    width: 80%;
+    margin: 1em;    
 }
-header h1{
-    font-size: 3em;
+#nom_job{
+    grid-column-start: 2;
+}
+header section:nth-child(2){
+    width: 40vw;
+    margin: auto;
+}
+header section:nth-child(3){
+    width: 30vw;
+    margin-block-start: 40px;
+}
+header section div h1{
+    font-size: 3vw;
     font-family: 'Lora', serif;
-    margin-block-end: 20px;
-    margin-block-start: 20px;
     text-shadow:4px 2px 2px white;
 }
-header h2{
-    font-size: 4em;
+header section div h2{
+    font-size: 3vw;
     color: rgb(51, 66, 153);
     font-family: 'Lora', serif;
-    margin-block-end: 0;
-    margin-block-start: 0;
     text-shadow: 2px 2px 2px white;
 }
-header div{
+#infos{
+    grid-column-start: 3;
+}
+.info_perso{
     font-family: 'Akaya Telivigala', cursive;
     margin-top: 10px;
     padding-left: 0;
     margin-left: 100px;
 }
-header p{
-    margin-right: 20px;
-    padding: 7px;
+.info_perso img{
+    width: 16px;
 }
-/* block1 */
-#block1{
-    width: 75%;
-    margin: 20px;
+#motivation{
+    grid-row: 2;
+    grid-column: 1 / 4;
+    place-self: center stretch;
 }
-#block1 .motivation{
+
+#motivation p{
     color:rgb(41, 37, 37);
-    font-size: 1.5em;
+    font-size: 2em;
     font-style: italic;
     font-weight: bolder;
     text-align: center;
     font-family: 'Bangers', cursive; 
-    padding: 20px;
+    /* padding: 20px; */
     text-shadow: 1px 1px 2px white;                       
+}
+
+/* block1 */
+#block1{
+    width: 75%;
+    margin: 20px;
 }
 #block1 h2{
     font-size: 25px;
@@ -130,6 +157,13 @@ footer > form{
     padding: 1em;
     border: 4px solid rgb(21, 31, 177);
     border-radius: 1em;
+    position: relative;
+}
+
+form h2{
+    position:absolute;
+    top: -11px;
+    background: cornflowerblue;
 }
 
 form div + div{
