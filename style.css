@@ -1,20 +1,21 @@
 @import url("reset.mini.css");
 
 body{
-    background-image: url("/medias/fond.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: rgba(153,241,249);
+}
+h1{
+    color: rgb(88, 85, 85);
 }
 
 h2{
-    color:rgb(5, 5, 77);
+    color:darkblue;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 main{
     display:flex;    
 }
 /* header */
+
 header{
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -22,16 +23,17 @@ header{
 }
 #logo{
     width: 30vw;
-    height: 30vw;
+    height: 27vw;
     grid-column-start: 1;
 }
 #logo_img{
-    border-radius: 50%;
-    width: 80%;
-    margin: 1em;    
+    border-radius: 10%;
+    width: 55%;
+    margin: 2.5em;  
 }
 #nom_job{
     grid-column-start: 2;
+    margin-top: 4em;
 }
 header section:nth-child(2){
     width: 40vw;
@@ -44,25 +46,27 @@ header section:nth-child(3){
 header section div h1{
     font-size: 3vw;
     font-family: 'Lora', serif;
-    text-shadow:4px 2px 2px white;
+    text-shadow:4px 2px 2px ;
 }
 header section div h2{
     font-size: 3vw;
-    color: rgb(51, 66, 153);
+    color: darkblue;
     font-family: 'Lora', serif;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 2px 2px 2px ;
 }
 #infos{
     grid-column-start: 3;
+    margin-block-start: 4vw;
+    color: rgb(112, 105, 105);
 }
 .info_perso{
     font-family: 'Akaya Telivigala', cursive;
-    margin-top: 10px;
-    padding-left: 0;
-    margin-left: 100px;
+    margin-left: 4em;
+    margin-block-end: 1em;
+    width: 30vw;
 }
 .info_perso img{
-    width: 16px;
+    width: 1em;
 }
 #motivation{
     grid-row: 2;
@@ -71,48 +75,60 @@ header section div h2{
 }
 
 #motivation p{
-    color:rgb(41, 37, 37);
+    color: rgb(88, 85, 85);
     font-size: 2em;
     font-style: italic;
-    font-weight: bolder;
-    text-align: center;
-    font-family: 'Bangers', cursive; 
-    /* padding: 20px; */
-    text-shadow: 1px 1px 2px white;                       
+    margin-left: 4vw;
+    font-family: 'Bangers', cursive;
+    text-shadow: 4px 2px 2px white                        
 }
 
 /* block1 */
+
 #block1{
     width: 75%;
-    margin: 20px;
+    margin: 2vw;
 }
 #block1 h2{
     font-size: 25px;
-    padding: 40px 10px 20px 40px;
+    padding: 3vw 3vw 3vw 3vw;
+    text-decoration: underline;
 }
 #block1 h3{
-    font-size: 19px;
+    font-size: 1.3em;
     padding: 0px 0px 0px 80px;
 }
-#block1 p{
+.ecole{
+    color:darkblue;
+}
+.entreprise{
+    color:darkblue;
+}
+#block1 h4{
     font-size: 14px;
+    padding: 0px 40px 15px 80px;
+    color: rgb(88, 85, 85);
+}
+#block1 p{
+    font-size: 1.1em;
     padding: 0px 40px 15px 80px;
 }
 
 /* block2 */
+
 #block2{
     width: 25%;
     display:flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 3vw
 }
 #block2 h2{
     font-size: 25px;
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 30px 0px;
 }
 #block2 ul{
     margin-left: 10px;
-    margin-right: 100px;
+    margin-right: 110px;
 }
 
 #block2 li{
@@ -123,7 +139,9 @@ header section div h2{
 .rectangle{
     background-color: mediumblue;
     height: 10px;
-    width: 200px;
+    width: 220px;
+    margin-top: .5em;
+
 }
 .rectangle2{
     background-color: grey;
@@ -163,7 +181,7 @@ footer > form{
 form h2{
     position:absolute;
     top: -11px;
-    background: cornflowerblue;
+    background: rgb(153,241,249);
 }
 
 form div + div{
