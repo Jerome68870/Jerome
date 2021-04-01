@@ -98,7 +98,7 @@ header section div h2{
 }
 #block1 h3{
     font-size: 2vw;
-    padding: 0px 0px 0px 80px;
+    padding: 0px 0px 0px 2em;
 }
 .ecole{
     color:darkblue;
@@ -107,13 +107,13 @@ header section div h2{
     color:darkblue;
 }
 #block1 h4{
-    font-size: 14px;
-    padding: 0px 40px 15px 80px;
+    font-size: 1.6vw;
+    padding: 0 1.5em 1em 2.5em;
     color: rgb(88, 85, 85);
 }
 #block1 p{
-    font-size: 1.8vw;
-    padding: 0px 40px 15px 80px;
+    font-size: 1.3vw;
+    padding: 0 1.5em 1em 3em;
 }
 
 /* block2 */
@@ -122,16 +122,16 @@ header section div h2{
     width: 25%;
     display:flex;
     flex-direction: column;
-    padding-top: 3vw
+    padding-top: vw
 }
 #block2 h2{
-    font-size: 2.2vw;
-    margin: 30px 0px 30px 0px;
+    font-size: 2vw;
+    padding: 3vw 0px 3vw 0px;
 }
 #block2 ul{
     margin-left: 10px;
     /* margin-right: 110px; */
-    font-size: 1.8vw
+    font-size: 1.3vw
 }
 
 #block2 li{
@@ -173,7 +173,7 @@ footer{
 footer > form{
     /* centrer le formulaire */
     margin: 0 auto;
-    width: 500px;
+    width: 420px;
     /* voir limite formulaire */
     padding: 1em;
     border: 4px solid rgb(21, 31, 177);
@@ -194,7 +194,7 @@ form div + div{
 div > label {
     /* alignement et taille étiquettes */
     display: inline-block;
-    width: 90px;
+    width: 70px;
 }
 
 div > input,textarea{
@@ -219,7 +219,7 @@ textarea{
     height: 10em;
 }
 
-.button{
+.bouton{
     /* placer le bouton a la même position que le champ texte */
     padding-left: 90px;
 }
@@ -241,5 +241,7 @@ button{
     #block2{
         width: 100%;
         margin-left: 10vw;
+        display:grid; 
+        grid-template-columns: repeat(2,1fr); 
     }
 } 
